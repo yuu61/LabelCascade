@@ -7,7 +7,7 @@
 	"scripts": {
 		"check": "pnpm run typecheck && pnpm run lint",
 		"typecheck": "tsc --noEmit",
-		"lint": "biome check .",
+		"lint": "biome check . --write",
 		"format": "biome format --write .",
 		"login": "clasp login",
 		"create": "clasp create --title \"LabelCascade\" --type standalone --rootDir ./src",
