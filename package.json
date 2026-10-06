@@ -1,0 +1,37 @@
+{
+	"name": "LabelCascade",
+	"version": "1.0.0",
+	"description": "Google Apps Script project to sync parent labels for Gmail",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"check": "pnpm run typecheck && pnpm run lint",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"format": "biome format --write .",
+		"login": "clasp login",
+		"create": "clasp create --title \"LabelCascade\" --type standalone --rootDir ./src",
+		"push": "clasp push",
+		"push:watch": "clasp push --watch",
+		"pull": "clasp pull",
+		"open": "clasp open"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.9.1",
+			"onFail": "download"
+		}
+	},
+	"packageManager": "pnpm@12.9.1",
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.15",
+		"@google/clasp": "^3.4.1",
+		"@types/google-apps-script": "^2.0.13",
+		"@types/node": "^26.6.4",
+		"typescript": "^7.0.2"
+	}
+}

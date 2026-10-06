@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Clasp auth & project metadata
+.clasprc.json
+.clasp.json
+
+# OS files
+Thumbs.db
+.DS_Store

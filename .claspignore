@@ -1,0 +1,8 @@
+# Ignore all files by default
+**/**
+
+# Allow files inside src
+!src/**
+!src/**/*.ts
+!src/**/*.js
+!src/**/*.json
