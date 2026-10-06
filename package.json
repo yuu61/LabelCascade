@@ -7,14 +7,16 @@
 	"scripts": {
 		"check": "pnpm run typecheck && pnpm run lint",
 		"typecheck": "tsc --noEmit",
+		"build": "node scripts/build.mjs",
 		"lint": "biome check . --write",
 		"format": "biome format --write .",
 		"login": "clasp login",
-		"create": "clasp create --title \"LabelCascade\" --type standalone --rootDir ./src",
-		"push": "clasp push",
+		"create": "clasp create --title \"LabelCascade\" --type standalone --rootDir ./dist",
+		"push": "pnpm run build && clasp push --force",
 		"push:watch": "clasp push --watch",
+		"deploy": "pnpm run push && clasp deploy",
 		"pull": "clasp pull",
-		"open": "clasp open"
+		"open": "clasp open-script"
 	},
 	"keywords": [],
 	"author": "",
