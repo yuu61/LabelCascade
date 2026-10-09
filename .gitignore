@@ -11,6 +11,7 @@ pnpm-debug.log*
 # Clasp auth & project metadata
 .clasprc.json
 .clasp.json
+.clasp.tmp.json
 
 # OS files
 Thumbs.db

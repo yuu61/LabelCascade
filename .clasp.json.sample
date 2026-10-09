@@ -1,4 +1,8 @@
 {
-  "scriptId": "YOUR_SCRIPT_ID_HERE",
+  "scriptId": "YOUR_PRIMARY_SCRIPT_ID_HERE",
+  "scriptIds": [
+    "YOUR_PRIMARY_SCRIPT_ID_HERE",
+    "YOUR_SECONDARY_SCRIPT_ID_HERE"
+  ],
   "rootDir": "./dist"
 }

@@ -31,14 +31,20 @@ pnpm run login
 pnpm run create
 ```
 
-※ 既存のプロジェクトに連携する場合は、プロジェクトルートに `.clasp.json` を作成し、以下のように記載してください：
+※ 既存のプロジェクトに連携する場合は、プロジェクトルートに `.clasp.json` を作成し、以下のように記載してください（複数プロジェクトへの同時プッシュにも対応しています）：
 
 ```json
 {
-  "scriptId": "<YOUR_SCRIPT_ID>",
+  "scriptId": "<PRIMARY_SCRIPT_ID>",
+  "scriptIds": [
+    "<SCRIPT_ID_1>",
+    "<SCRIPT_ID_2>"
+  ],
   "rootDir": "./dist"
 }
 ```
+※ `scriptIds` を指定すると、`pnpm run push` 時に一覧にあるすべてのプロジェクトへ一括でプッシュされます。
+
 
 ### 5. 定期実行トリガーの設定
 

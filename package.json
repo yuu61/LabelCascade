@@ -12,9 +12,9 @@
 		"format": "biome format --write .",
 		"login": "clasp login",
 		"create": "clasp create --title \"LabelCascade\" --type standalone --rootDir ./dist",
-		"push": "pnpm run build && clasp push --force",
+		"push": "node scripts/push.mjs",
 		"push:watch": "clasp push --watch",
-		"deploy": "pnpm run push && clasp deploy",
+		"deploy": "node scripts/deploy.mjs",
 		"pull": "clasp pull",
 		"open": "clasp open-script"
 	},
